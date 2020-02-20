@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <link rel="stylesheet" href="style-Page3.css">
+    <link rel="shortcut icon" href="img/Contacts-passive.png" type="img/jpg">
+    <meta charset="utf-8">
+    <meta name="description" content="Проект по информатике 10А класса, Ростова-на-Дону, МБОУ школы № 92.">
+    <meta name="author" content="Тупикин Олег, Чеботарев Владимир, Маслакова Светлана, Ункинов Адьян, Гроссман Егор">
+    <!--<meta http-equiv="Refresh" content="3" />-->
+    <title> &lt;Контакты&gt; Проект 10"А" </title>
+</head>
+
+<body>
+ 
+
+    
+
+
+<header>
+    <a href="hub_2.html" id="css_page-" data-micron="pop" class="header_link">
+        <div class="header_image header_image_home">
+        </div>
+        <span class="header_page_title">
+            главная
+        </span>
+    </a>
+    <a href="Page1.html" id="css_page" data-micron="pop" class="header_link">
+        <div class="header_image header_image_css">
+        </div>
+        <span class="header_page_title">
+            css
+        </span>
+    </a>
+    <a href="Page2.html" id="info_page" data-micron="pop" class="header_link">
+        <div class="header_image header_image_info">
+        </div>
+        <span class="header_page_title">
+            источники
+        </span>
+    </a>
+    <a href="#" id="contacts_page" data-micron="pop" class="header_link">
+        <div class="header_image header_image_contacts">
+        </div>
+        <span class="header_page_title">
+            контакты
+        </span>
+    </a>
+</header>
+ <!------------------------------------------------------------------------------->
+<canvas id="q" style="z-index: -100;"></canvas>
+
+<script>
+        
+     s = window.screen; 
+    var width = q.width = s.width;
+    var height = q.height = s.height;
+    var letters = Array(256).join(1).split('');
+    
+    var draw = function () {
+      q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+      q.getContext('2d').fillRect(0,0,width,height);
+      q.getContext('2d').fillStyle='#0F0';
+      letters.map(function(y_pos, index){
+      text = String.fromCharCode(65+Math.random()*33);
+      x_pos = index * 10;
+      q.getContext('2d').fillText(text, x_pos, y_pos);
+      letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+      });
+    };
+    setInterval(draw, 33);
+    
+     </script>  
+<!-------------------------------------------------------------------------------->
+<main>
+    <div id="allinfo" style="z-index: 2;">
+    <div class="info" style="z-index: 3;" id="info">
+        <span class="cvet"><h1>Заголовок</h1><p>zz zzzzzz zzzzzzzzzzzzzz zzzzzzzzzzzzzzz zzzzzzzzzz zzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzz  zzzzzx zzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzzzzz zzzzzz zzzzzzzz zzzzzz zzzzzzzzzzzz zzzzzzzz zzzzzz</p></span>
+         
+    </div>   
+</div>
+
+</main>
+
+</body>
+
+</html>

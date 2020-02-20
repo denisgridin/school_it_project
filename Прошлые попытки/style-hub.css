@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    padding:0px;
+}      
+body{
+    background-size: cover;
+    background: url(img/hero-bg.jpg);
+    width:100%;
+    z-index:0;
+}
+#info{
+    padding-top:175px;
+}
+menu{
+    border-right: 5px dashed  black;
+    border-left: 5px dashed black;
+    border-bottom: 5px dashed black;
+    background: rgb(19, 104, 19);
+    margin-left:15% ;
+    margin-right:15% ; 
+    margin-bottom:10% ;
+}
+
+.svet {
+    color: rgb(31, 207, 31);
+}
+
+header {
+    width:100%;
+    position: fixed;
+    background: rgb(1, 15, 5);
+    z-index: 10;
+    border-bottom: 8px double rgb(5, 230, 5);
+    border-top: 8px double rgb(5, 230, 5);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+.header_image {
+    width: 100px;
+    height: 100px;
+}
+
+.header_button{
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(-45deg, #042e0e 0, rgb(5,230,5) 100%);
+    box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.header_button:hover{
+    background: rgb(8, 46, 3);
+    color: rgb(5,230,5);
+    border: 3px solid rgb(5,230,5);
+    transition-property: background;
+    transition: .2s;
+}
+
+
+.header_image_css {
+    background: url('./img/css-passive.png');
+    background-size: cover;
+}
+.header_image_css:hover {
+    background: url('./img/css-active.png');
+    background-size: cover;
+}
+
+.header_image_info {
+    background: url('./img/info-passive.png');
+    background-size: cover;
+}
+.header_image_info:hover {
+    background: url('./img/info-active.png');
+    background-size: cover;
+}
+
+.header_image_contacts {
+    background: url('./img/Contacts-passive.png');
+    background-size: cover;
+}
+.header_image_contacts:hover {
+    background: url('./img/Contacts-active.png');
+    background-size: cover;
+}
