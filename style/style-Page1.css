@@ -1,0 +1,39 @@
+
+.cvet {
+    color: rgb(24, 214, 24);
+    font-size: 25px;
+}
+
+.info {
+    border: 10px solid rgb(5,230,5);
+    background: rgba(0, 0, 0, 0.74);
+    margin-top: 2%;
+    margin-left: 12%;
+    margin-right:10%;
+    margin-bottom: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    position: inherit;
+    width: auto;
+}
+
+#info{
+margin-bottom: 100px;
+position: absolute;
+
+}
+
+canvas{
+    position: fixed;
+
+}
+#allinfo{
+margin-left: 140px;
+}
+h1{
+text-align: center;    
+}

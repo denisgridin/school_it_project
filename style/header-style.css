@@ -1,0 +1,106 @@
+header {
+    height:100vh;
+    width: 150px;
+    position: fixed;
+    background: rgb(0, 0, 0);
+    z-index: 30;
+    border-right: 8px double rgb(5, 230, 5);
+    border-left: 8px double rgb(5, 230, 5);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+
+}
+.header_image {
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+
+.header_button:hover{
+    background: rgb(8, 46, 3);
+    color: rgb(5,230,5);
+    border: 3px solid rgb(5,230,5);
+    transition-property: background;
+    transition: .2s;
+}
+
+a, a:visited, a:active, a:hover {
+    text-decoration: none;
+}
+
+.header_image_home__passive {
+    background: url('../img/home-passive.jpg');
+    background-size: cover;
+}
+.header_image_home__active {
+    background: url('../img/home-active.jpg');
+    background-size: cover;
+}
+.header_image_home__passive:active {
+    background: url('../img/home-active.jpg');
+    background-size: cover;
+}
+
+.header_image_css__passive {
+    background: url('../img/css-passive.png');
+    background-size: cover;
+}
+.header_image_css__active {
+    background: url('../img/css-active.png');
+    background-size: cover;
+}
+.header_image_css__passive:active {
+    background: url('../img/css-active.png');
+    background-size: cover;
+}
+
+.header_image_info__passive {
+    background: url('../img/info-passive.png');
+    background-size: cover;
+}
+
+.header_image_info__active {
+    background: url('../img/info-active.png');
+    background-size: cover;
+}
+
+.header_image_info__passive {
+    background: url('../img/info-passive.png');
+    background-size: cover;
+}
+
+.header_image_info__passive:active {
+    background: url('../img/Info-active.png');
+    background-size: cover;
+}
+
+.header_image_contacts__passive {
+    background: url('../img/Contacts-passive.png');
+    background-size: cover;
+}
+
+.header_image_contacts__active {
+    background: url('../img/Contacts-active.png');
+    background-size: cover;
+}
+
+.header_image_contacts__passive:active {
+    background: url('../img/Contacts-active.png');
+    background-size: cover;
+}
+
+.header_page_title {
+    font-size: 20px;
+    color: rgb(5,230,5);
+    margin: 0px auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header_link {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,65 @@
+*{
+    
+    margin:0px;
+  padding:0px;
+
+}      
+body{
+    background-size: cover;
+    background: url(../img/hero-bg.jpg);
+width:100%;
+z-index:0;
+
+}
+#info{
+    
+    padding-top:175px;
+
+}
+menu{
+    
+    border-right: 5px dashed  black;
+    border-left: 5px dashed black;
+    border-bottom: 5px dashed black;
+    background: rgb(19, 104, 19);
+    margin-left:15% ;
+    margin-right:15% ; 
+    margin-bottom:10% ; 
+
+}
+
+.svet {
+    color: rgb(31, 207, 31);}
+
+#header {
+
+    width:100%;
+    position: fixed;
+    background: rgb(1, 15, 5);
+    display: block;
+    z-index: 10;
+    border-bottom: 8px double rgb(5, 230, 5);
+    border-top: 8px double rgb(5, 230, 5);
+   
+}
+#topmenu li {
+
+    display: inline;
+    margin-right: 150px;
+    padding: 0px;
+
+}
+#topmenu img { 
+     margin-top: 10px;
+     padding-bottom:10px;
+    }
+#hubpage{ 
+margin-bottom: 0;
+padding-bottom: 0;
+}
+p{
+    
+    color:rgb(5, 230, 5);
+    text-align: center;
+
+}

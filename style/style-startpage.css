@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Pixel;
+    src: url("../fonts/pixel.ttf");
+}
+*{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+    font-family: Pixel;
+}
+html{
+    background-size: cover;
+}
+
+.start_page__wrapper {
+    width: 100vw;  /* 100vw - блок занимает всю ширину страницы */
+    height: 100vh; /* 100vh - блок занимает всю высоту страницы */
+    /* Ниже выравниваем блок с кнопкой по центру */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#info{
+    background-color: rgba(5, 73, 16, 0.726);
+    width: 200px;
+    height: 40px;
+    border: rgb(30, 255, 0) double;
+    border-radius: 5px;
+}
+
+.goto_button {
+    text-align: center;
+    cursor: pointer;
+    color: rgb(30, 255, 0) ;
+}
+
+
+.collapse {
+    border: 1px rgb(10, 131, 10) solid !important;
+    transition: 0.5s;
+    width: 100%!important;
+    height:0px!important;
+}
+span:active{
+ opacity: 0;
+}
